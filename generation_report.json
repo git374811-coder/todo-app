@@ -1,0 +1,58 @@
+{
+  "project_name": "todo-app",
+  "project_directory": "workspace\\todo-app",
+  "generated_at": "2026-05-08T10:26:02.762226",
+  "total_files_written": 6,
+  "total_files_failed": 0,
+  "files": [
+    {
+      "filename": "todo-app/requirements.txt",
+      "full_path": "workspace\\todo-app\\todo-app\\requirements.txt",
+      "size_bytes": 83,
+      "line_count": 5,
+      "status": "success",
+      "written_at": "2026-05-08T10:26:02.744235"
+    },
+    {
+      "filename": "todo-app/models/task.py",
+      "full_path": "workspace\\todo-app\\todo-app\\models\\task.py",
+      "size_bytes": 433,
+      "line_count": 17,
+      "status": "success",
+      "written_at": "2026-05-08T10:26:02.748823"
+    },
+    {
+      "filename": "todo-app/routes/tasks.py",
+      "full_path": "workspace\\todo-app\\todo-app\\routes\\tasks.py",
+      "size_bytes": 1385,
+      "line_count": 44,
+      "status": "success",
+      "written_at": "2026-05-08T10:26:02.753483"
+    },
+    {
+      "filename": "todo-app/templates/index.html",
+      "full_path": "workspace\\todo-app\\todo-app\\templates\\index.html",
+      "size_bytes": 675,
+      "line_count": 26,
+      "status": "success",
+      "written_at": "2026-05-08T10:26:02.755831"
+    },
+    {
+      "filename": "todo-app/tests/test_tasks.py",
+      "full_path": "workspace\\todo-app\\todo-app\\tests\\test_tasks.py",
+      "size_bytes": 592,
+      "line_count": 21,
+      "status": "success",
+      "written_at": "2026-05-08T10:26:02.759680"
+    },
+    {
+      "filename": "todo-app/README.md",
+      "full_path": "workspace\\todo-app\\todo-app\\README.md",
+      "size_bytes": 570,
+      "line_count": 15,
+      "status": "success",
+      "written_at": "2026-05-08T10:26:02.761914"
+    }
+  ],
+  "failures": []
+}

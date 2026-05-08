@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<body>
+    <!-- TO DO LIST -->
+    <h1>Todo List</h1>
+    <ul id="todo-list"></ul>
+    
+    <!-- ADD TODO FORM -->
+    <form id="add-todo-form">
+        <input type="text" id="new-todo" placeholder="Enter a new todo...">
+        <button id="add-todo-btn">Add Todo</button>
+    </form>
+    
+    <!-- DELETE TODO BUTTONS -->
+    <button id="delete-all-btn">Delete All</button>
+    
+    <script src="{{ url_for('static', filename='js/todo.js') }}"></script>
+</body>
+</html>
