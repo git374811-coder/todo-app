@@ -2,7 +2,7 @@
   "original_goal": "Build a To-Do app using Flask with SQLite and HTML frontend",
   "plan": {
     "project_name": "todo-app",
-    "description": "A simple To-Do app that allows users to create, update, and delete tasks",
+    "description": "A simple To-Do app that allows users to create, read, update and delete tasks.",
     "tech_stack": [
       "flask",
       "sqlite",
@@ -11,94 +11,88 @@
     "folder_structure": {
       "root": "todo-app/",
       "folders": [
+        "app",
         "models",
-        "routes",
-        "templates",
-        "tests"
+        "templates"
       ],
       "files": [
-        "todo-app/requirements.txt",
-        "todo-app/todo_app.py",
+        "todo-app/app.py",
         "todo-app/models/__init__.py",
         "todo-app/models/task.py",
-        "todo-app/routes/__init__.py",
-        "todo-app/routes/tasks.py",
         "todo-app/templates/index.html",
-        "todo-app/tests/test_tasks.py",
-        "todo-app/README.md"
+        "requirements.txt"
       ]
     },
     "steps": [
       {
         "step_number": 1,
-        "title": "Create Project Structure and Requirements File",
-        "description": "Set up the project directory, create a requirements.txt file to manage dependencies.",
+        "title": "Set up the project directory and requirements file",
+        "description": "Create a new project directory and initialize the project with Flask and SQLite. Create a requirements.txt file to manage dependencies.",
         "files_to_create": [
-          "todo-app/requirements.txt"
+          "todo-app/app.py",
+          "requirements.txt"
         ],
         "dependencies": [
-          "pip packages: flask, sqlite3"
+          "flask",
+          "sqlite"
         ],
-        "code_hint": ""
+        "code_hint": "Initialize the project, install dependencies"
       },
       {
         "step_number": 2,
-        "title": "Create Database Model",
-        "description": "Define the database schema and create a Task model using SQLAlchemy.",
+        "title": "Create the database model",
+        "description": "Define a SQLite database model for tasks using SQLAlchemy. Create a models folder and an __init__.py file to organize the model.",
         "files_to_create": [
+          "todo-app/models/__init__.py",
           "todo-app/models/task.py"
         ],
-        "dependencies": [
-          "pip package: sqlalchemy"
-        ],
-        "code_hint": ""
+        "dependencies": [],
+        "code_hint": "Create a task model with fields for title, description, and due date"
       },
       {
         "step_number": 3,
-        "title": "Create Flask App and Routes",
-        "description": "Define the Flask app, create routes for tasks CRUD operations.",
+        "title": "Create routes for CRUD operations",
+        "description": "Define Flask routes for creating, reading, updating, and deleting tasks. Create an app folder to organize the routes.",
         "files_to_create": [
-          "todo-app/routes/tasks.py"
+          "todo-app/app.py"
         ],
         "dependencies": [
-          "pip package: flask"
+          "flask_sqlalchemy"
         ],
-        "code_hint": ""
+        "code_hint": "Define routes for tasks CRUD operations"
       },
       {
         "step_number": 4,
-        "title": "Create HTML Templates",
-        "description": "Design and create HTML templates for the To-Do app UI.",
+        "title": "Create HTML templates for task views",
+        "description": "Design and create HTML templates for displaying tasks. Create a templates folder to organize the templates.",
         "files_to_create": [
           "todo-app/templates/index.html"
         ],
         "dependencies": [],
-        "code_hint": ""
+        "code_hint": "Design a template for displaying tasks"
       },
       {
         "step_number": 5,
-        "title": "Write Tests",
-        "description": "Write unit tests for the Task model and routes using Pytest or Unittest.",
+        "title": "Write unit tests",
+        "description": "Write unit tests to ensure the application works correctly. Create a tests folder to organize the tests.",
         "files_to_create": [
-          "todo-app/tests/test_tasks.py"
+          "todo-app/tests/test_app.py"
         ],
-        "dependencies": [
-          "pip package: pytest"
-        ],
-        "code_hint": ""
+        "dependencies": [],
+        "code_hint": "Write tests for tasks CRUD operations"
       },
       {
         "step_number": 6,
-        "title": "Document README",
-        "description": "Write a brief description of the To-Do app, its features, and usage instructions.",
+        "title": "Create README.md documentation",
+        "description": "Write a README file to document the project, its features, and usage.",
         "files_to_create": [
           "todo-app/README.md"
         ],
         "dependencies": [],
-        "code_hint": ""
+        "code_hint": "Document the project"
       }
     ],
     "total_steps": 6,
-    "estimated_complexity": "simple"
+    "estimated_complexity": "moderate"
   }
 }
